@@ -57,6 +57,10 @@ public class Basetest {
 		
 		ChromOpt.addArguments("--incognito");
 		
+		ChromOpt.addArguments("--headless");
+		ChromOpt.addArguments("--no-sandbox");
+		ChromOpt.addArguments("--disable-dev-shm-usage");
+		
 		driver = new ChromeDriver(ChromOpt);
 		driver.manage().window().maximize();
 	}
