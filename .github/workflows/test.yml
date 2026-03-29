@@ -1,0 +1,38 @@
+name: Run Selenium Tests
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Install dependencies
+      run: mvn clean install -DskipTests
+
+    - name: Run Tests
+      run: mvn test
+
+    
+
+    - name: Upload Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-report
+        path: |
+          reports/
+          target/surefire-reports/
