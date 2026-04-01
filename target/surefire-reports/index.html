@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(wronguser, wrongpass, hamid, test, 10000.0, false)">logintest(wronguser, wrongpass, hamid, test, 10000.0, false)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(problem_user, secret_sauce, hamid, test, 10000.0, true)">logintest(problem_user, secret_sauce, hamid, test, 10000.0, true)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,12 +103,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(performance_glitch_user, secret_sauce, hamid, test, 10000.0, true)">logintest(performance_glitch_user, secret_sauce, hamid, test, 10000.0, true)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(standard_user, secret_sauce, hamid, test, 20000.0, true)">logintest(standard_user, secret_sauce, hamid, test, 20000.0, true)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(standard_user, secret_sauce, hamid, test, 10000.0, true)">logintest(standard_user, secret_sauce, hamid, test, 10000.0, true)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(performance_glitch_user, secret_sauce, hamid, test, 21000.0, true)">logintest(performance_glitch_user, secret_sauce, hamid, test, 21000.0, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="testng.LoginTest" class="method navigator-link" hash-for-method="logintest(user_ghalat, wrongpass, salim, zaza, 20000.0, false)">logintest(user_ghalat, wrongpass, salim, zaza, 20000.0, false)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -142,60 +128,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testng.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="logintest(wronguser, wrongpass, hamid, test, 10000.0, false)">
-                  </a> <!-- logintest(wronguser, wrongpass, hamid, test, 10000.0, false) -->
-                  <span class="method-name">logintest</span>
-                  <span class="parameters">(wronguser,wrongpass,hamid,test,10000.0,false)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testng.LoginTest.logintest(LoginTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="logintest(problem_user, secret_sauce, hamid, test, 10000.0, true)">
-                  </a> <!-- logintest(problem_user, secret_sauce, hamid, test, 10000.0, true) -->
-                  <span class="method-name">logintest</span>
-                  <span class="parameters">(problem_user,secret_sauce,hamid,test,10000.0,true)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#finish&quot;}
-  (Session info: chrome=146.0.7680.154)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a67beb6be663c6ca754d0d438197223, findElement {value=finish, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.154, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\Mourad\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64297}, goog:processID: 14576, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64297/devtoo..., se:cdpVersion: 146.0.7680.154, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a67beb6be663c6ca754d0d438197223
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at testng.LoginPage.ClickFinish(LoginPage.java:88)
-	at testng.LoginTest.logintest(LoginTest.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -204,18 +136,26 @@ Session ID: 3a67beb6be663c6ca754d0d438197223
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logintest(performance_glitch_user, secret_sauce, hamid, test, 10000.0, true)">
-                  </a> <!-- logintest(performance_glitch_user, secret_sauce, hamid, test, 10000.0, true) -->
+                  <a name="logintest(standard_user, secret_sauce, hamid, test, 20000.0, true)">
+                  </a> <!-- logintest(standard_user, secret_sauce, hamid, test, 20000.0, true) -->
                   <span class="method-name">logintest</span>
-                  <span class="parameters">(performance_glitch_user,secret_sauce,hamid,test,10000.0,true)</span>
+                  <span class="parameters">(standard_user,secret_sauce,hamid,test,20000.0,true)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="logintest(standard_user, secret_sauce, hamid, test, 10000.0, true)">
-                  </a> <!-- logintest(standard_user, secret_sauce, hamid, test, 10000.0, true) -->
+                  <a name="logintest(performance_glitch_user, secret_sauce, hamid, test, 21000.0, true)">
+                  </a> <!-- logintest(performance_glitch_user, secret_sauce, hamid, test, 21000.0, true) -->
                   <span class="method-name">logintest</span>
-                  <span class="parameters">(standard_user,secret_sauce,hamid,test,10000.0,true)</span>
+                  <span class="parameters">(performance_glitch_user,secret_sauce,hamid,test,21000.0,true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintest(user_ghalat, wrongpass, salim, zaza, 20000.0, false)">
+                  </a> <!-- logintest(user_ghalat, wrongpass, salim, zaza, 20000.0, false) -->
+                  <span class="method-name">logintest</span>
+                  <span class="parameters">(user_ghalat,wrongpass,salim,zaza,20000.0,false)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,28 +211,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintest')
 data.setCell(0, 2, 'testng.LoginTest')
-data.setCell(0, 3, 8495);
+data.setCell(0, 3, 7658);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'logintest')
 data.setCell(1, 2, 'testng.LoginTest')
-data.setCell(1, 3, 3224);
+data.setCell(1, 3, 3832);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'logintest')
 data.setCell(2, 2, 'testng.LoginTest')
-data.setCell(2, 3, 3201);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'logintest')
-data.setCell(3, 2, 'testng.LoginTest')
-data.setCell(3, 3, 3055);
+data.setCell(2, 3, 1688);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -324,52 +260,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">logintest(standard_user, secret_sauce, hamid, test, 10000.0, true)</span>
-                <span class="method-start">2308 ms</span>
+                <span class="method-name">logintest(standard_user, secret_sauce, hamid, test, 20000.0, true)</span>
+                <span class="method-start">3389 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">off([TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">5365 ms</span>
+                <span class="method-start">7224 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(public void testng.LoginTest.logintest(java.lang.String,java.lang.String,java.lang.String,java.lang....)</span>
-                <span class="method-start">5891 ms</span>
+                <span class="method-start">8102 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">logintest(problem_user, secret_sauce, hamid, test, 10000.0, true)</span>
-                <span class="method-start">6858 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">off([TestResult name=logintest status=FAILURE method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">10064 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void testng.LoginTest.logintest(java.lang.String,java.lang.String,java.lang.String,java.lang....)</span>
-                <span class="method-start">10459 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">logintest(wronguser, wrongpass, hamid, test, 10000.0, false)</span>
-                <span class="method-start">11412 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">off([TestResult name=logintest status=FAILURE method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">14637 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(public void testng.LoginTest.logintest(java.lang.String,java.lang.String,java.lang.String,java.lang....)</span>
-                <span class="method-start">14967 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">logintest(performance_glitch_user, secret_sauce, hamid, test, 10000.0, true)</span>
-                <span class="method-start">15982 ms</span>
+                <span class="method-name">logintest(performance_glitch_user, secret_sauce, hamid, test, 21000.0, true)</span>
+                <span class="method-start">10021 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">off([TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">24478 ms</span>
+                <span class="method-start">17679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void testng.LoginTest.logintest(java.lang.String,java.lang.String,java.lang.String,java.lang....)</span>
+                <span class="method-start">18022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logintest(user_ghalat, wrongpass, salim, zaza, 20000.0, false)</span>
+                <span class="method-start">19536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">off([TestResult name=logintest status=SUCCESS method=LoginTest.logintest(java.lang.String,java.lang.Stri...)</span>
+                <span class="method-start">21225 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

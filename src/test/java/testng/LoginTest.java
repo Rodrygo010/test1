@@ -1,6 +1,10 @@
 package testng;
 
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -44,11 +48,15 @@ public class LoginTest extends Basetest{
 		login.enteremail(username);
 		login.enterpass(password);
 		
-		if(isValid) {
-			test.info("Valid login → continue flow");
-		
 		test.info("Click login");
 		login.cicklogin();
+		
+		if(isValid) {
+			test.info("Valid login → continue flow");
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
+			wait.until(ExpectedConditions.elementToBeClickable(login.addtocart));
+		
+		
 		
 		
 		test.info("addtocart");
@@ -80,7 +88,7 @@ public class LoginTest extends Basetest{
 		else {
 			test.info("invalid login = erreur message");
 			Assert.assertTrue(login.loginerreurmsg());
-			test.fail("Login failed as expected (invalid credentials)");
+			test.pass("Message d'erreur affiché correctement");
 		}
 	}
 }

@@ -46,9 +46,6 @@ public class LoginPage {
 	
 	public void cicklogin() {
 		driver.findElement(btnlogin).click();
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(addtocart));
 	}
 	
 	
